@@ -8,11 +8,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Controls\ViewInventoriesComponent.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IMS.Plugins.EFCore\IMS.Plugins.EFCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Controls\ViewInventoriesComponent.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Controls\ViewInventoriesComponent.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Controls\ViewInventoriesComponent.razor" />
   </ItemGroup>
 
 </Project>
