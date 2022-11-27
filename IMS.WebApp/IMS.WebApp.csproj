@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Controls\ViewInventoriesComponent.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.11" />
@@ -25,15 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Controls\ViewInventoriesComponent.razor" />
+    <None Include="ViewInventoriesComponent.razor" />
   </ItemGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="Controls\ViewInventoriesComponent.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Controls\ViewInventoriesComponent.razor" />
+    <Folder Include="Controls\" />
   </ItemGroup>
 
 </Project>
